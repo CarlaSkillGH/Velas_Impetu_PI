@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overflow-hidden bg-gray-900" style="height: 100vh; width: 100vw;">
+        <div class="bg-gray-900">
+            <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="relative flex items-center justify-between">
+                    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                        <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round"
+                            stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
+                            fill="none">
+                            <rect x="3" y="1" width="7" height="12"></rect>
+                            <rect x="3" y="17" width="7" height="6"></rect>
+                            <rect x="14" y="1" width="7" height="6"></rect>
+                            <rect x="14" y="11" width="7" height="12"></rect>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Velas</span>
+                    </a>
+                    <ul class="flex items-center hidden space-x-8 lg:flex">
+                        <li><a href="index.html" aria-label="Our product" title="Our product"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Inicio</a>
+                        </li>
+                        <li><a href="nosotros.html" aria-label="Our product" title="Our product"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Nosotros</a>
+                        </li>
+                        <li><a href="productos.html" aria-label="Product pricing" title="Product pricing"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Productos</a>
+                        </li>
+                        <li><a href="/" aria-label="About us" title="About us"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Mobile menu -->
+                    <div class="lg:hidden">
+                        <button aria-label="Open Menu" title="Open Menu"
+                            class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                                <path fill="currentColor"
+                                    d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                                <path fill="currentColor"
+                                    d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                            </svg>
+                        </button>
+                        Mobile menu dropdown
+                        <div class="absolute top-0 left-0 w-full">
+                            <div class="p-5 bg-white border rounded shadow-sm">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <a href="/" aria-label="Company" title="Company"
+                                            class="inline-flex items-center">
+                                            <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24"
+                                                stroke-linejoin="round" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" stroke="currentColor" fill="none">
+                                                <rect x="3" y="1" width="7" height="12"></rect>
+                                                <rect x="3" y="17" width="7" height="6"></rect>
+                                                <rect x="14" y="1" width="7" height="6"></rect>
+                                                <rect x="14" y="11" width="7" height="12"></rect>
+                                            </svg>
+                                            <span
+                                                class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Velas Amour.</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button aria-label="Close Menu" title="Close Menu"
+                                            class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                                            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <ul class="space-y-4">
+                                        <li><a href="/" aria-label="Our product" title="Our product"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Inicio</a>
+                                        </li>
+                                        <li><a href="/" aria-label="Our product" title="Our product"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Nosotros</a>
+                                        </li>
+                                        <li><a href="/" aria-label="Product pricing" title="Product pricing"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Productos</a>
+                                        </li>
+                                        <li><a href="/" aria-label="About us" title="About us"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Contacto</a></li>
+                                        <li>
+                                            <a href="/"
+                                                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                aria-label="Sign up" title="Sign up">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div class="flex flex-col items-center justify-between xl:flex-row">
+                <div class="w-full max-w-xl mb-12 xl:pr-16 xl:mb-0 xl:w-7/12">
+                    <h2
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                        Velas Amour. <br class="hidden md:block" />
+                        Realsa tu magia <span class="text-teal-accent-400">y espiritu.</span>
+                    </h2>
+                    <p class="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan,
+                        totam rem aperiam, eaque ipsa quae.
+                    </p>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700">
+                        Conocer mas
+                        <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                            <path
+                                d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="w-full max-w-xl xl:px-1 xl:w-5/12">
+                    <div class="relative">
+                        <svg viewBox="0 0 52 24" fill="currentColor"
+                            class="absolute bottom-0 right-0 z-0 hidden w-32 -mb-8 -mr-20 text-teal-accent-400 lg:w-32 lg:-mr-16 sm:block">
+                            <defs>
+                                <pattern id="766323e1-e594-4ffd-a688-e7275079d540" x="0" y="0" width=".135"
+                                    height=".30">
+                                    <circle cx="1" cy="1" r=".7"></circle>
+                                </pattern>
+                            </defs>
+                            <rect fill="url(#766323e1-e594-4ffd-a688-e7275079d540)" width="52" height="24"></rect>
+                        </svg>
+                        <div class="relative bg-white rounded shadow-2xl p-7 sm:p-10">
+                           <img src="./velas.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" mt-10p-20 bg-gray-900 px-20" style=" width: 100vw;">
+        <h3 class="font-sans text-2xl font-bold">Bienvenido a Velas Amour</h3>
+        <p class=" text-base text-gray-400 md:text-lg">En velas Amour, nos apasiona iluminar tus momentos especiales con nuestras exclusivas velas diseñadas para cada ocasión. Desde románticas cenas a la luz de las velas hasta celebraciones festivas, nuestro emprendimiento se especializa en ofrecer una amplia gama de velas que se adaptan a todos los gustos y eventos. 
+            creemos en la calidad sin compromisos. Todas nuestras velas están hechas con ceras de la más alta calidad, garantizando una combustión limpia y duradera. Además, trabajamos con esmero en la selección de fragancias que no solo embellecen tu espacio, sino que también crean experiencias sensoriales únicas.
+        </p>
+        <h3 class="mt-10 font-sans text-2xl font-bold">Variedad para Todas las Ocasiones</h3>
+        <p class=" text-base text-gray-400 md:text-lg">Ya sea que estés buscando la suavidad de las velas aromáticas para relajarte después de un día agotador o necesites velas decorativas para una celebración especial, tenemos la solución perfecta. Explora nuestra colección de velas aromáticas, decorativas, votivas, y muchas más. Además, ofrecemos opciones personalizadas para eventos especiales, asegurándonos de que tus velas sean tan únicas como la ocasión que celebras.</p>
+        <h3 class="mt-10 font-sans text-2xl font-bold">Sostenibilidad en Cada Llama</h3>
+        <p class=" text-base text-gray-400 md:text-lg">Nos enorgullece ser una marca comprometida con la sostenibilidad. Utilizamos envases reciclables y nos esforzamos por minimizar nuestro impacto ambiental. Además, muchas de nuestras velas son hechas a mano por artesanos locales, apoyando a comunidades creativas y fomentando la artesanía.</p>
+        <h3 class="mt-10 font-sans text-2xl font-bold">Descubre la Magia de Velas Amour</h3>
+        <p class=" text-base text-gray-400 md:text-lg">En Velas Amour, no solo vendemos velas; ofrecemos la oportunidad de crear momentos inolvidables. Cada una de nuestras velas cuenta una historia única, tejida con esencias que despiertan emociones y colores que iluminan tus recuerdos. Nos esforzamos por ser más que una marca: somos tus cómplices en la construcción de experiencias memorables.
+            En nuestro taller, el arte de la iluminación es algo más que la mezcla de ceras y fragancias. Es una expresión creativa que se funde con la pasión por transformar cualquier espacio en un santuario de calidez y tranquilidad. Cada vela que creamos es un testimonio de esta dedicación, una pieza de arte efímero destinada a resaltar los momentos más especiales de tu vida.
+            En Velas Amour, entendemos que cada ocasión es única, y tu elección de vela debería reflejarlo. Ofrecemos servicios de personalización que te permiten diseñar velas a medida para eventos especiales como bodas, cumpleaños o simplemente para regalar un toque personal a tu hogar. Trabajamos estrechamente contigo para garantizar que cada vela sea una extensión de tus emociones y celebraciones.
+            Descubre la magia de Velas Amour y permítenos iluminar tu vida, evento tras evento, con la luz cálida y encantadora de nuestras velas. Tu historia merece ser contada con cada llama que enciendas.
+        </p>
+    </div>
+</body>
+
+</html>

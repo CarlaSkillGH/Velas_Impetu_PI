@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overflow-hidden bg-gray-900" style="height: 60px; width: 100vw;">
+        <div class="bg-gray-900">
+            <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="relative flex items-center justify-between">
+                    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                        <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round"
+                            stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
+                            fill="none">
+                            <rect x="3" y="1" width="7" height="12"></rect>
+                            <rect x="3" y="17" width="7" height="6"></rect>
+                            <rect x="14" y="1" width="7" height="6"></rect>
+                            <rect x="14" y="11" width="7" height="12"></rect>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Velas</span>
+                    </a>
+                    <ul class="flex items-center hidden space-x-8 lg:flex">
+                        <li><a href="index.html" aria-label="Our product" title="Our product"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Inicio</a>
+                        </li>
+                        <li><a href="nosotros.html" aria-label="Our product" title="Our product"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Nosotros</a>
+                        </li>
+                        <li><a href="productos.html" aria-label="Product pricing" title="Product pricing"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Productos</a>
+                        </li>
+                        <li><a href="/" aria-label="About us" title="About us"
+                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Mobile menu -->
+                    <div class="lg:hidden">
+                        <button aria-label="Open Menu" title="Open Menu"
+                            class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                                <path fill="currentColor"
+                                    d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                                <path fill="currentColor"
+                                    d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                            </svg>
+                        </button>
+                        Mobile menu dropdown
+                        <div class="absolute top-0 left-0 w-full">
+                            <div class="p-5 bg-white border rounded shadow-sm">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <a href="/" aria-label="Company" title="Company"
+                                            class="inline-flex items-center">
+                                            <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24"
+                                                stroke-linejoin="round" stroke-width="2" stroke-linecap="round"
+                                                stroke-miterlimit="10" stroke="currentColor" fill="none">
+                                                <rect x="3" y="1" width="7" height="12"></rect>
+                                                <rect x="3" y="17" width="7" height="6"></rect>
+                                                <rect x="14" y="1" width="7" height="6"></rect>
+                                                <rect x="14" y="11" width="7" height="12"></rect>
+                                            </svg>
+                                            <span
+                                                class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Velas Amour.</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button aria-label="Close Menu" title="Close Menu"
+                                            class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                                            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <ul class="space-y-4">
+                                        <li><a href="index.html" aria-label="Our product" title="Our product"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Inicio</a>
+                                        </li>
+                                        <li><a href="nosotros.html" aria-label="Our product" title="Our product"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Nosotros</a>
+                                        </li>
+                                        <li><a href="productos.html" aria-label="Product pricing" title="Product pricing"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Productos</a>
+                                        </li>
+                                        <li><a href="/" aria-label="About us" title="About us"
+                                                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Contacto</a></li>
+                                        <li>
+                                            <a href="/"
+                                                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                aria-label="Sign up" title="Sign up">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="flex flex-col w-full lg:flex-row">
+        <div class="grid flex-grow h-80 card bg-base-300 rounded-box place-items-center"><h2>Visión</h2>
+
+            <p>Ser la principal fuente de inspiración y confort para nuestros clientes, al ofrecer una amplia gama de velas aromáticas personalizadas y decorativas que evocan la esencia reconfortante del hogar y reviven los momentos especiales de la vida, consolidando nuestra presencia como una marca de renombre en el área metropolitana de Medellín y en toda Colombia.</p> </div> 
+        <div class="divider lg:divider-horizontal"> <p> OR </p> </div> 
+        <div class="grid flex-grow h-80 card bg-base-300 rounded-box place-items-center"><h2>Misión</h2>
+
+            <p>En Ímpetu, nos comprometemos a crear velas aromáticas de alta calidad que reflejen la pureza de las esencias naturales del mar, la montaña, fogatas y otros momentos especiales de la vida. Nos esforzamos por ofrecer a nuestros clientes la oportunidad de personalizar sus propias velas para que puedan revivir y disfrutar de cada ocasión especial, llevando consigo el calor reconfortante y la atmósfera acogedora de un hogar iluminado por velas. A través de un proceso artesanal cuidadoso y una atención meticulosa a los detalles, buscamos proporcionar una experiencia sensorial única y duradera que deleite los sentidos y cree recuerdos duraderos. Con envíos confiables y rápidos en todo el territorio colombiano, nos esforzamos por llevar la esencia del hogar a cada rincón del país.</p>
+        </div>
+      </div>
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-10 row-gap-8 lg:grid-cols-3">
+          <div>
+            <div class="flex">
+              <h6 class="mr-2 text-4xl font-bold md:text-5xl text-deep-purple-accent-400">
+                + 156
+              </h6>
+              <div class="flex items-center justify-center rounded-full bg-teal-accent-400 w-7 h-7">
+                <svg class="text-teal-900 w-7 h-7" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </svg>
+              </div>
+            </div>
+            <p class="mb-2 font-bold md:text-lg">Clientes felices</p>
+            <p class="text-gray-700">
+                Nuestros clientes descubren en Velas Ímpetu el compañero perfecto para cada instante memorable, un regalo atemporal que trasciende las fronteras del tiempo y el espacio. <B>Ímpetu</B>: donde la luz abraza los recuerdos y la belleza perdura en cada llama.  
+            </p>
+          </div>
+          <div>
+            <div class="flex">
+              <h6 class="mr-2 text-4xl font-bold md:text-5xl text-deep-purple-accent-400">
+                + 1K
+              </h6>
+              <div class="flex items-center justify-center rounded-full bg-teal-accent-400 w-7 h-7">
+                <svg class="text-teal-900 w-7 h-7" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </svg>
+              </div>
+            </div>
+            <p class="mb-2 font-bold md:text-lg">Productos vendidos</p>
+            <p class="text-gray-700">
+                Desde momentos cotidianos hasta ocasiones especiales, nuestras creaciones meticulosamente elaboradas <b>encienden la chispa de la emoción</b> y añaden un toque distintivo de elegancia a cada espacio. Con una devoción arraigada en la excelencia. 
+            </p>
+          </div>
+          <div>
+            <div class="flex">
+              <h6 class="mr-2 text-4xl font-bold md:text-5xl text-deep-purple-accent-400">
+                +62
+              </h6>
+              <div class="flex items-center justify-center rounded-full bg-teal-accent-400 w-7 h-7">
+                <svg class="text-teal-900 w-7 h-7" stroke="currentColor" viewBox="0 0 52 52">
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </svg>
+              </div>
+            </div>
+            <p class="mb-2 font-bold md:text-lg">Envíos</p>
+            <p class="text-gray-700">
+                Descubra el encanto etéreo de Ímpetu, donde una comunidad de clientes leales <b>encuentra deleite en la sofisticación</b> y versatilidad de nuestras exquisitas velas.
+            </p>
+          </div>
+          <div class="carousel carousel-end rounded-box">
+            <div class="carousel-item">
+              <img src="imagenes/vela-forma-arbol-navidad-vela-encima.jpg" alt="Vela-navidena" />
+            </div> 
+            <div class="carousel-item">
+              <img src="imagenes/hermosas-velas-blancas-hechas-mano-diferentes-formas-tamanos-sobre-fondo-madera.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item">
+              <img src="imagenes/manos-sostienen-cuidado-hermosa-vela-blanca-hecha-mano-copia-espacio-postal.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item">
+              <img src="imagenes/manos-sostienen-cuidadosamente-hermosa-vela-hecha-mano-forma-cuerpo-femenino-copiar-postal-espacial.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item">
+              <img src="imagenes/monton-petalos-cerca-vela.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item">
+              <img src="imagenes/vela-forma-torso-mujer-ardiendo-atmosfera-habitacion-interior-moderna-gris-humo-despues-vela.jpg" alt="Drink" />
+            </div> 
+            <div class="carousel-item">
+              <img src="imagenes/vista-frontal-donut-cumpleanos-vela-encendida.jpg" alt="Drink" />
+            </div>
+          </div>
+        </div>
+      </div>  
+</body>    
